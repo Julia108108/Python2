@@ -15,6 +15,7 @@
 # каждом из кустов этой грядки.  )
 # 9
 
+#1
 bushes = int(input('Введите количество кустов на грядке: '))
 berries = list(map(int, input('Сколько ягод растет на кустах: ').split()))
 max_sum = 0
@@ -29,3 +30,17 @@ if berries[0] + berries[1] + berries[-1] > max_sum:
     max_sum = berries[0] + berries[1] + berries[-1]
         
 print(max_sum)
+
+#2
+
+n = int(input())
+arr = list()
+for i  in range(n):
+    x = int(input())
+    arr.append(x)
+
+arr_count = list()
+for i in range(len(arr) - 1):
+    arr_count.append(arr[i - 1] + arr[i] + arr[i + 1])
+arr_count.append(arr[-2] + arr[-1] + arr[0])
+print(max(arr_count))

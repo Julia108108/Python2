@@ -8,6 +8,7 @@
 # 3 6 9 12 15 18
 # 6 12 
 
+#1
 numbers1 = int(input('Введите количество чисел первого множества: '))
 numbers2 = int(input('Введите количество чисел во втором множестве: '))
 
@@ -18,3 +19,5 @@ set2 = set(list2)
 result_set = sorted(set1.intersection(set2))
 
 print(result_set)
+
+
